@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab06_Zoo
 {
-    abstract class Animal
+    public abstract class Animal
     {
         /// <summary>
         /// Virtual property to be overridden in subsequent classes
