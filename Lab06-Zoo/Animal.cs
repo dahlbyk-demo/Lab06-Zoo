@@ -14,7 +14,7 @@ namespace Lab06_Zoo
         /// <summary>
         /// Abstract methods to be overridden on next or subsequent layers
         /// </summary>
-        public abstract void Verb();
+        public abstract void Action();
         public abstract void Sound();
 
         /// <summary>
@@ -24,7 +24,5 @@ namespace Lab06_Zoo
         {
             Console.WriteLine("This animal sleeps at night.");
         }
-
-
     }
 }
