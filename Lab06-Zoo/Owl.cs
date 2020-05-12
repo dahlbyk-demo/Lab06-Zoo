@@ -26,7 +26,7 @@ namespace Lab06_Zoo
         /// </summary>
         public override string Action()
         {
-            return "You imagine the owl swooping to snatch a mouse in the field, but only find one manage to see one sleeping.";
+            return "You imagine the owl swooping to snatch a mouse in the field, but only manage to find one sleeping.";
         }
         public override string Sleep()
         {

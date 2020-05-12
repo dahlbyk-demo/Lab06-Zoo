@@ -27,7 +27,7 @@ namespace Lab06_Zoo
 
         public override string Sound()
         {
-            return "The peacock sounds like it's laughing as you run away scared.";
+            return "The peacocks sound like they're laughing as you run away scared.";
         }
     }
 }

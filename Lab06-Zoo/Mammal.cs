@@ -7,7 +7,7 @@ namespace Lab06_Zoo
         /// <summary>
         /// Virtual property for mammals defined here
         /// </summary>
-        public virtual string Breeds { get; set; } = "Unsolicitously, and for everyone to see!";
+        public virtual string Breeds { get; set; } = "Breeds unsolicitously, and for everyone to see!";
 
         /// <summary>
         /// Abstract method overridden here but a mammal doesn't know what sound it makes. See farther down the inheritance for this abstract override of the sound method.

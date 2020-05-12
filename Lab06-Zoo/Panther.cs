@@ -37,7 +37,12 @@ namespace Lab06_Zoo
         /// </summary>
         public override string Climb()
         {
-            return "You see the speed of the panther climb a tree to peer down on you.";
+            return "You see the speed of the panther climbing a tree to peer down on you.";
+        }
+
+        public override string Sleep()
+        {
+            return "This animal hunts at night.";
         }
     }
 }
