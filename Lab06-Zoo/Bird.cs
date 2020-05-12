@@ -2,6 +2,9 @@
 
 namespace Lab06_Zoo
 {
+    /// <summary>
+    /// Abstract sub class of animal and parent class to owls and peacocks
+    /// </summary>
     public abstract class Bird : Animal
     {
         /// <summary>
