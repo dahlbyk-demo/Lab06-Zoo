@@ -18,16 +18,18 @@ namespace Lab06_Zoo
             Console.WriteLine(Environment.NewLine);
 
             // Peacock properties and traits
-            Console.WriteLine(peacock.Color);
-            Console.WriteLine(peacock.Fly()); // Proof of inheritence as it reaches out to bird to acquire this method
-            Console.WriteLine(peacock.Action());
-            Console.WriteLine(peacock.Sound());
-            Console.WriteLine(peacock.Sleep()); // Virtual method defined in animal base class
-            /* 
-            Why did overriding this in a different sub class change it everywhere?
-            I changed it in my polar bear concrete class thinking it would only change for polar bears.
-            Console.WriteLine(polarBear.NumberInPen);
-            */
+            Console.WriteLine($"{peacock.Color}\n" +
+                $"{peacock.NumberInPen}\n" +
+                $"{peacock.Fly()}\n" +
+                $"{peacock.Action()}\n" +
+                $"{peacock.Sound()}\n" +
+                $"{peacock.Sleep()}\n"
+                );
+            //Console.WriteLine(peacock.NumberInPen);
+            //Console.WriteLine(peacock.Fly()); // Proof of inheritence as it reaches out to bird to acquire this method
+            //Console.WriteLine(peacock.Action());
+            //Console.WriteLine(peacock.Sound());
+            //Console.WriteLine(peacock.Sleep()); // Virtual method defined in animal base class
 
             Console.WriteLine(Environment.NewLine);
 
