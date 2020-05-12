@@ -20,14 +20,14 @@ namespace Lab06_Zoo
         /// <summary>
         /// Abstract method overrides here
         /// </summary>
-        public override void Action()
+        public override string Action()
         {
-            Console.WriteLine("Both peacock charges as you approach!");
+            return "Both peacocks charge as you approach!";
         }
 
-        public override void Sound()
+        public override string Sound()
         {
-            Console.WriteLine("The peacock sounds like it's laughing as you run away scared.");
+            return "The peacock sounds like it's laughing as you run away scared.";
         }
     }
 }

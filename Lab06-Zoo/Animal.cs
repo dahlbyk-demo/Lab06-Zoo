@@ -14,15 +14,15 @@ namespace Lab06_Zoo
         /// <summary>
         /// Abstract methods to be overridden on next or subsequent layers
         /// </summary>
-        public abstract void Action();
-        public abstract void Sound();
+        public abstract string Action();
+        public abstract string Sound();
 
         /// <summary>
         /// Virtual method to potentially be overridden down the line
         /// </summary>
-        public virtual void Sleep()
+        public virtual string Sleep()
         {
-            Console.WriteLine("This animal sleeps at night.");
+            return "This animal sleeps at night.";
         }
     }
 }

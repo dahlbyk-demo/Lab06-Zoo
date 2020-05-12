@@ -15,9 +15,9 @@ namespace Lab06_Zoo
         /// <summary>
         /// Virtual method for birds here
         /// </summary>
-        public virtual void Fly()
+        public virtual string Fly()
         {
-            Console.WriteLine("All of our birds know how to fly, but we will have penguins soon!");
+            return "All of our birds know how to fly, but we will have penguins soon!";
         }
     }
 }

@@ -16,9 +16,9 @@ namespace Lab06_Zoo
         /// <summary>
         /// Abstract method override and example of polymorphism
         /// </summary>
-        public override void Sound()
+        public override string Sound()
         {
-            Console.WriteLine("The polar bears grunt as they stumble over each other to cuddle you.");
+            return "The polar bears grunt as they stumble over each other to cuddle you.";
         }
     }
 }

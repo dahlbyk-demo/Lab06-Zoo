@@ -15,9 +15,9 @@ namespace Lab06_Zoo
         /// <summary>
         /// Virtual method for cats defined here
         /// </summary>
-        public virtual void Climb()
+        public virtual string Climb()
         {
-            Console.WriteLine("The feline species in our zoo love to climb!");
+            return "The feline species in our zoo love to climb!";
         }
     }
 }

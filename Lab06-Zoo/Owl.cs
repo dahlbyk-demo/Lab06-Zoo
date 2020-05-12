@@ -24,17 +24,17 @@ namespace Lab06_Zoo
         /// <summary>
         /// Abstract methods overridden here
         /// </summary>
-        public override void Action()
+        public override string Action()
         {
-            Console.WriteLine("You imagine the owl swooping to snatch a mouse in the field, but only find one manage to see one sleeping.");
+            return "You imagine the owl swooping to snatch a mouse in the field, but only find one manage to see one sleeping.";
         }
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("These birds sleep during the day and hunt at night!");
+            return "These birds sleep during the day and hunt at night!";
         }
-        public override void Sound()
+        public override string Sound()
         {
-            Console.WriteLine("You hear the owl hoot as you walk by and disturb his sleep!");
+            return "You hear the owl hoot as you walk by and disturb his sleep!";
         }
     }
 }

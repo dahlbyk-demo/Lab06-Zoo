@@ -19,25 +19,25 @@ namespace Lab06_Zoo
         /// <summary>
         /// Abstract method override here
         /// </summary>
-        public override void Sound()
+        public override string Sound()
         {
-            Console.WriteLine("You hear a high pitched snarl coming from the shadows.");
+            return "You hear a high pitched snarl coming from the shadows.";
         }
 
         /// <summary>
         /// Abstract method re-overidden deeper in the inheritence
         /// </summary>
-        public override void Action()
+        public override string Action()
         {
-            Console.WriteLine("These animals aren't the cuddly type cats...");
+            return "These animals aren't the cuddly type cats...";
         }
 
         /// <summary>
         /// Virtual method override here
         /// </summary>
-        public override void Climb()
+        public override string Climb()
         {
-            Console.WriteLine("You see the speed of the panther climb a tree to peer down on you.");
+            return "You see the speed of the panther climb a tree to peer down on you.";
         }
     }
 }

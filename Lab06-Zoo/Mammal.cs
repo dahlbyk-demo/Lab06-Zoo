@@ -12,9 +12,9 @@ namespace Lab06_Zoo
         /// <summary>
         /// Abstract method overridden here but a mammal doesn't know what sound it makes. See farther down the inheritance for this abstract override of the sound method.
         /// </summary>
-        public override void Action()
+        public override string Action()
         {
-            Console.WriteLine("Mammals are cuddly animals! Come check it out for yourself!");
+            return "Mammals are cuddly animals! Come check it out for yourself!";
         }
     }
 }
