@@ -19,28 +19,25 @@ namespace Lab06_Zoo
 
             // Peacock properties and traits
             Console.WriteLine($"{peacock.Color}\n" +
-                $"{peacock.NumberInPen}\n" +
-                $"{peacock.Fly()}\n" +
+                $"{peacock.Fly()}\n" +// Proof of inheritence as it reaches out to bird to acquire this method
                 $"{peacock.Action()}\n" +
                 $"{peacock.Sound()}\n" +
-                $"{peacock.Sleep()}\n"
+                $"{peacock.Sleep()}\n"// Virtual method defined in animal base class
                 );
-            //Console.WriteLine(peacock.NumberInPen);
-            //Console.WriteLine(peacock.Fly()); // Proof of inheritence as it reaches out to bird to acquire this method
-            //Console.WriteLine(peacock.Action());
-            //Console.WriteLine(peacock.Sound());
-            //Console.WriteLine(peacock.Sleep()); // Virtual method defined in animal base class
 
-            Console.WriteLine(Environment.NewLine);
+            Console.WriteLine($"{owl.Color}\n" +
+                $"{owl.Fly()}\n" +
+                $"{owl.Action()}\n" +
+                $"{owl.Sound()}\n" +
+                $"{owl.Sleep()}\n"// Polymorhphism and virtual method override
+                );
 
-            // Owl properties and traits
-            Console.WriteLine(owl.Color);
-            Console.WriteLine(owl.Fly());
-            Console.WriteLine(owl.Action());
-            Console.WriteLine(owl.Sound());
-            Console.WriteLine(owl.Sleep()); // Polymorhphism and virtual method override
-
-            Console.WriteLine(Environment.NewLine);
+            Console.WriteLine($"{owl.Color}\n" +
+                $"{owl.Fly()}\n" +
+                $"{owl.Action()}\n" +
+                $"{owl.Sound()}\n" +
+                $"{owl.Sleep()}\n"
+                );
 
             // Polar properties and traits
             Console.WriteLine(polarBear.Breeds);
