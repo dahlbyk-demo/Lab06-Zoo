@@ -22,5 +22,18 @@ namespace Lab06_Zoo.Tests
             // Assert
             Assert.Equal("All of our birds know how to fly, but we will have penguins soon!", result);
         }
+
+        [Fact]
+        public void Testing_interface_on_second_class()
+        {
+            // Arrange
+            PolarBear polarBear = new PolarBear();
+
+            // Act
+            string result = polarBear.Fly();
+
+            // Assert
+            Assert.Equal("Polar bears with wings!", result);
+        }
     }
 }

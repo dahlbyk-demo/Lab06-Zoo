@@ -6,12 +6,21 @@ namespace Lab06_Zoo
     /// Concrete sub class 3 of 5,
     /// Direct sub class of mammal
     /// </summary>
-    public class PolarBear : Mammal
+    public class PolarBear : Mammal, IFly
     {
         /// <summary>
         /// The polar bears have bread so we have a litter of cubs here!
         /// </summary>
         public override int NumberInPen => 5;
+
+        /// <summary>
+        /// Interface implemented here
+        /// </summary>
+        /// <returns></returns>
+        public string Fly()
+        {
+            return "Polar bears with wings!";
+        }
 
         /// <summary>
         /// Abstract method override and example of polymorphism
