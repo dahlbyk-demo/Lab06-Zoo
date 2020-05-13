@@ -6,6 +6,19 @@ namespace Lab06_Zoo.Tests
     public class Lab06_Zoo
     {
 
+        [Fact]
+        public void Third_level_concrete_to_animal_inheritance()
+        {
+            // Arrange
+            Animal tiger = new Tiger();
+
+            // Act
+            string result = tiger.Sound();
+
+            // Assert
+            Assert.Equal("Rawr!", result);
+        }
+
         /// <summary>
         /// Interface testing below
         /// </summary>
@@ -22,7 +35,9 @@ namespace Lab06_Zoo.Tests
             // Assert
             Assert.Equal("All of our birds know how to fly, but we will have penguins soon!", result);
         }
-
+        /// <summary>
+        /// Interface polymorphism displayed between these two tests
+        /// </summary>
         [Fact]
         public void Interface_subclass_override()
         {
@@ -35,7 +50,7 @@ namespace Lab06_Zoo.Tests
             // Assert
             Assert.Equal("The owl swoops at unsuspecting prey.", result);
         }
-
+        
         [Fact]
         public void Testing_interface_on_second_class()
         {
