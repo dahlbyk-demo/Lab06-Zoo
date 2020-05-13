@@ -8,7 +8,7 @@ namespace Lab06_Zoo
     {
 
         /// <summary>
-        /// Virtual method for birds here
+        /// Interface method for birds/other
         /// </summary>
         string Fly();
 

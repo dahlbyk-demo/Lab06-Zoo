@@ -41,7 +41,7 @@ namespace Lab06_Zoo
             Console.WriteLine(Environment.NewLine);
 
             // Polar properties and traits
-            Console.WriteLine(polarBear.Breeds);
+            Console.WriteLine(polarBear.Breed());
             Console.WriteLine($"There are {polarBear.NumberInPen} bears, 2 adults and 3 cubs."); // Animal virtual property, polymorphism
             Console.WriteLine(polarBear.Action());
             Console.WriteLine(polarBear.Sound());

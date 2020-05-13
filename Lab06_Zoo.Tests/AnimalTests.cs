@@ -63,5 +63,18 @@ namespace Lab06_Zoo.Tests
             // Assert
             Assert.Equal("Polar bears with wings!", result);
         }
+
+        [Fact]
+        public void Testing_breed_interface()
+        {
+            // Arrange
+            PolarBear polarBear = new PolarBear();
+
+            // Act
+            string result = polarBear.Breed();
+
+            // Assert
+            Assert.Equal("The cubs are so cute!!!", result);
+        }
     }
 }

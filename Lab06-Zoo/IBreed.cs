@@ -6,5 +6,10 @@ namespace Lab06_Zoo
 {
     interface IBreed
     {
+        /// <summary>
+        /// Interface method for all animals here
+        /// </summary>
+        /// <returns></returns>
+        string Breed();
     }
 }
