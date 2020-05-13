@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Lab06_Zoo
+﻿namespace Lab06_Zoo
 {
     /// <summary>
     /// Concrete sub class 3 of 5,
@@ -8,6 +6,11 @@ namespace Lab06_Zoo
     /// </summary>
     public class PolarBear : Mammal
     {
+        public PolarBear()
+            : base(900)
+        {
+        }
+
         /// <summary>
         /// The polar bears have bread so we have a litter of cubs here!
         /// </summary>

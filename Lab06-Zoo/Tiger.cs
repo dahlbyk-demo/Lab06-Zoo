@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Lab06_Zoo
+﻿namespace Lab06_Zoo
 {
     /// <summary>
     /// Concrete class 5 of 5,
@@ -10,6 +8,11 @@ namespace Lab06_Zoo
     {
         // Private tiger property defined here
         private const string tigerColor = "Orange with black stripes";
+
+        public Tiger(int mass) : base(mass)
+        {
+        }
+
         /// <summary>
         /// Abstract property override here
         /// </summary>

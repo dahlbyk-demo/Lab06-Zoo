@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lab06_Zoo
 {
@@ -23,6 +21,31 @@ namespace Lab06_Zoo
         public virtual string Sleep()
         {
             return "This animal sleeps at night.";
+        }
+
+        public void DisplayCard()
+        {
+            Console.WriteLine("-------------------");
+            Console.WriteLine($"{GetType().Name}");
+            Console.WriteLine("-------------------");
+            Console.WriteLine($"Action: {Action()}");
+            Console.WriteLine($"Sound: {Sound()}");
+            Console.WriteLine($"Sleep: {Sleep()}");
+
+            if (this is ICanFly flier)
+            {
+                Console.WriteLine("-------------------");
+                Console.WriteLine($"Flying Sound: {flier.FlyingSound()}");
+                Console.WriteLine($"Coconuts?: {flier.CarryingCoconuts}");
+            }
+
+            AdditionalDisplay();
+
+            Console.WriteLine("-------------------");
+        }
+
+        protected virtual void AdditionalDisplay()
+        {
         }
     }
 }

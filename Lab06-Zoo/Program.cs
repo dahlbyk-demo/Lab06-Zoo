@@ -13,7 +13,18 @@ namespace Lab06_Zoo
             Owl owl = new Owl();
             PolarBear polarBear = new PolarBear();
             Panther panther = new Panther();
-            Tiger tiger = new Tiger();
+            Tiger tiger = new Tiger(700);
+
+            Animal[] animals = new Animal[]
+            {
+                peacock, owl, polarBear, panther, tiger
+            };
+
+            for (int i = 0; i < animals.Length; i++)
+            {
+                animals[i].DisplayCard();
+            }
+            return;
 
             Console.WriteLine(Environment.NewLine);
 

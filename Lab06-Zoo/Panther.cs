@@ -8,6 +8,8 @@ namespace Lab06_Zoo
     /// </summary>
     public class Panther : Cat
     {
+        public Panther() : base(300) { }
+
         // Private property for color defined here
         private const string pantherColor = "Our panthers are a sleek, sheer black.";
         /// <summary>
@@ -43,6 +45,14 @@ namespace Lab06_Zoo
         public override string Sleep()
         {
             return "This animal hunts at night.";
+        }
+
+
+        protected override void AdditionalDisplay()
+        {
+            base.AdditionalDisplay();
+
+            Console.WriteLine("Rawr is my favorite band");
         }
     }
 }

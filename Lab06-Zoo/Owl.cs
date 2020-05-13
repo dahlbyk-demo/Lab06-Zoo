@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace Lab06_Zoo
+﻿namespace Lab06_Zoo
 {
     /// <summary>
     /// Concrete animal 2 of 5,
     /// The requirement for virutal method and property override are accomplished here
     /// </summary>
-    public class Owl : Bird
+    public class Owl : Bird, ICanFly
     {
         // Private property for Color override
         private const string owlColor = "Our owls are snowy owls!";
@@ -21,6 +19,8 @@ namespace Lab06_Zoo
         /// </summary>
         public override int NumberInPen => 1;
 
+        public bool CarryingCoconuts => true;
+
         /// <summary>
         /// Abstract methods overridden here
         /// </summary>
@@ -28,6 +28,12 @@ namespace Lab06_Zoo
         {
             return "You imagine the owl swooping to snatch a mouse in the field, but only manage to find one sleeping.";
         }
+
+        public string FlyingSound()
+        {
+            return "Whoooosh!";
+        }
+
         public override string Sleep()
         {
             return "These birds sleep during the day and hunt at night!";

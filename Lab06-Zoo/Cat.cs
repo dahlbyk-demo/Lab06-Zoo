@@ -1,12 +1,15 @@
-﻿using System;
-
-namespace Lab06_Zoo
+﻿namespace Lab06_Zoo
 {
     /// <summary>
     /// Abstract sub class of mammals defined here
     /// </summary>
     public abstract class Cat : Mammal
     {
+        protected Cat(int mass)
+            : base(mass)
+        {
+        }
+
         /// <summary>
         /// Abstract property of cats undefined here
         /// </summary>
