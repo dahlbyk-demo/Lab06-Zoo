@@ -9,6 +9,8 @@ namespace Lab06_Zoo
         /// </summary>
         public virtual int NumberInPen { get; set; } = 2;
 
+        public abstract bool IsFriendly { get; }
+
         /// <summary>
         /// Abstract methods to be overridden on next or subsequent layers
         /// </summary>
@@ -21,6 +23,11 @@ namespace Lab06_Zoo
         public virtual string Sleep()
         {
             return "This animal sleeps at night.";
+        }
+
+        public override string ToString()
+        {
+            return $"Animal: {GetType().Name}";
         }
 
         public void DisplayCard()

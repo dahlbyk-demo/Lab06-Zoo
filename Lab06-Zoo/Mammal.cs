@@ -29,5 +29,16 @@ namespace Lab06_Zoo
         {
             Console.WriteLine("I like milk");
         }
+
+        public new string ToString()
+        {
+            return $"Mammal: {GetType().Name}";
+        }
+
+        public new void DisplayCard()
+        {
+            Console.WriteLine("This is a Mammal Card!");
+            Console.WriteLine("My Breeds are: " + Breeds);
+        }
     }
 }

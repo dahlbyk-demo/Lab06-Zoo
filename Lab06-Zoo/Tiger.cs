@@ -9,9 +9,11 @@
         // Private tiger property defined here
         private const string tigerColor = "Orange with black stripes";
 
-        public Tiger(int mass) : base(mass)
+        public Tiger(int mass, bool isFriendly) : base(mass)
         {
         }
+
+        public override bool IsFriendly { get; }
 
         /// <summary>
         /// Abstract property override here

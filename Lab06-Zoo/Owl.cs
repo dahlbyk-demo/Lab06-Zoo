@@ -21,6 +21,8 @@
 
         public bool CarryingCoconuts => true;
 
+        public override bool IsFriendly { get; } = false;
+
         /// <summary>
         /// Abstract methods overridden here
         /// </summary>

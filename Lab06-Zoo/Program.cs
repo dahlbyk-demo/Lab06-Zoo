@@ -13,7 +13,8 @@ namespace Lab06_Zoo
             Owl owl = new Owl();
             PolarBear polarBear = new PolarBear();
             Panther panther = new Panther();
-            Tiger tiger = new Tiger(700);
+            Panther panther2 = new Panther();
+            Tiger tiger = new Tiger(700, true);
 
             Animal[] animals = new Animal[]
             {
@@ -22,7 +23,19 @@ namespace Lab06_Zoo
 
             for (int i = 0; i < animals.Length; i++)
             {
+                Console.WriteLine(animals[i]);
                 animals[i].DisplayCard();
+            }
+
+            Mammal[] mammals = new Mammal[]
+            {
+                polarBear, panther, tiger, panther2
+            };
+
+            for (int i = 0; i < mammals.Length; i++)
+            {
+                Console.WriteLine(mammals[i].ToString());
+                mammals[i].DisplayCard();
             }
             return;
 

@@ -16,6 +16,8 @@
         /// </summary>
         public override int NumberInPen => 5;
 
+        public override bool IsFriendly => false;
+
         /// <summary>
         /// Abstract method override and example of polymorphism
         /// </summary>

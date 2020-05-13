@@ -17,6 +17,7 @@ namespace Lab06_Zoo
         /// Another example of polymorphism from tigers
         /// </summary>
         public override string Color { get => pantherColor; set => pantherColor.ToString(); }
+        public override bool IsFriendly => true;
 
         /// <summary>
         /// Abstract method override here
