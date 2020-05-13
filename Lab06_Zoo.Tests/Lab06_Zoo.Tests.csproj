@@ -13,4 +13,8 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\lab06-Zoo\Lab06_Zoo.csproj" />
+  </ItemGroup>
+
 </Project>
