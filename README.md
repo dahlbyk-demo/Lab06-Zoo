@@ -4,10 +4,14 @@ A virtual zoo to demostrate use of class inheritence.
 
 ## Summary
 
-This is a console application written is C# using the .NET Core framework.  Utilizing OOP principles to define abstract classes with sub classes and three levels of inheritence, the console app prints out all of the different animal's properties and method results.  Below is a diagram defining the relationships of all of the subsequent sub classes and their relations to each other:
+This is a console application written is C# using the .NET Core framework.  Utilizing OOP principles to define abstract classes with sub classes and three levels of inheritence, the console app prints out all of the different animal's properties and method results.  Below is a diagram defining the relationships of all of the subsequent sub classes and their relations to each other as well as labeled interfaces and which classes implement them accordingly:
 
-![ULM Diagram](assets/lab06Domain.png)
+![ULM Diagram](assets/lab07ZooDomain.png)
 ![Proof of Life](assets/zooConsole.png)
+
+## Interfaces
+
+Interfaces are an item you can create within project that allows you to easily split methods and properties out into definitive files that can be implemented anywhere across your project by adding them onto a class name.  They're usefulness lies in allowing you to declare a method that might need to be used across several classes that aren't directly inherent of each other.  My zoo example here displays utilizing an interface on an abstract class "Bird" and then proves polymorphism through an override in one of its concrete sub classes.  The "Peacock" display the default settings of the "IFLy" interface inherited by its parent class "Bird" while "Owl" returns differently after overriding the interface that is implemented on its parent class.  Also the "IBreed" interface is utilized by both the "PolarBear" class on the mammal side \(see the diagram above\) and "Peacock".  Check me out in the future for more applicable examples of how to use an interface!
 
 ## OOP Principles
 
