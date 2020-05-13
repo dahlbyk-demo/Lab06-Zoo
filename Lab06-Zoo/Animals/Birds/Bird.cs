@@ -5,7 +5,7 @@ namespace Lab06_Zoo
     /// <summary>
     /// Abstract sub class of animal and parent class to owls and peacocks
     /// </summary>
-    public abstract class Bird : Animal
+    public abstract class Bird : Animal, IFly
     {
         /// <summary>
         /// First of two required abstract properties written into the hierarchy of my classes

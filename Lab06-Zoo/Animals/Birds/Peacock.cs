@@ -5,7 +5,7 @@ namespace Lab06_Zoo
     /// <summary>
     /// Concrete animal derivative class 1 of 5
     /// </summary>
-    public class Peacock : Bird
+    public class Peacock : Bird, IBreed
     {
         // Private property for peacock color defined here
         private const string peacockColor = "Our peacocks are albino!";
@@ -24,10 +24,19 @@ namespace Lab06_Zoo
         {
             return "Both peacocks charge as you approach!";
         }
-
+        
         public override string Sound()
         {
             return "The peacocks sound like they're laughing as you run away scared.";
+        }
+
+        /// <summary>
+        /// Second interface, second implementation
+        /// </summary>
+        /// <returns></returns>
+        public string Breed()
+        {
+            return "What beautiful feathers!";
         }
     }
 }

@@ -17,14 +17,15 @@ namespace Lab06_Zoo
 
             Console.WriteLine(Environment.NewLine);
 
-            // Peacock properties and traits
+            // Peacock methods and properties
             Console.WriteLine($"{peacock.Color}\n" +
                 $"{peacock.Fly()}\n" +// Proof of inheritence as it reaches out to bird to acquire this method
                 $"{peacock.Action()}\n" +
-                $"{peacock.Sound()}\n" +
+                $"{peacock.Breed()}\n" +
                 $"{peacock.Sleep()}\n"// Virtual method defined in animal base class
                 );
 
+            // Owl methods and properties
             Console.WriteLine($"{owl.Color}\n" +
                 $"{owl.Fly()}\n" +
                 $"{owl.Action()}\n" +
@@ -32,37 +33,30 @@ namespace Lab06_Zoo
                 $"{owl.Sleep()}\n"// Polymorhphism and virtual method override
                 );
 
-            Console.WriteLine($"{owl.Color}\n" +
-                $"{owl.Fly()}\n" +
-                $"{owl.Action()}\n" +
-                $"{owl.Sound()}\n" +
-                $"{owl.Sleep()}\n"
+            // Polar bear methods and properties
+            Console.WriteLine($"{polarBear.Breed()}\n" +
+                $"{polarBear.Fly()}\n" +
+                $"{polarBear.Action()}\n" +
+                $"{polarBear.Sound()}\n" +
+                $"{polarBear.Sleep()}\n"
                 );
 
-            // Polar properties and traits
-            Console.WriteLine(polarBear.Breeds);
-            Console.WriteLine($"There are {polarBear.NumberInPen} bears, 2 adults and 3 cubs."); // Animal virtual property, polymorphism
-            Console.WriteLine(polarBear.Action());
-            Console.WriteLine(polarBear.Sound());
-            Console.WriteLine(polarBear.Sleep()); // Polymorhphism and virtual method override
+            // Panther methods and properties
+            Console.WriteLine($"{panther.Color}\n" +
+                $"{panther.Climb()}\n" +
+                $"{panther.Action()}\n" +
+                $"{panther.Sound()}\n" +
+                $"{panther.Sleep()}\n"
+                );
 
-            Console.WriteLine(Environment.NewLine);
+            // Tiger methods and properties
+            Console.WriteLine($"{tiger.Color}\n" +
+                $"{tiger.Climb()}\n" +
+                $"{tiger.Action()}\n" +
+                $"{tiger.Sound()}\n" +
+                $"{tiger.Sleep()}\n"
+                );
 
-            // Panther properties and traits
-            Console.WriteLine(panther.Color);
-            Console.WriteLine(panther.Sleep());
-            Console.WriteLine(panther.Sound());
-            Console.WriteLine(panther.Action());
-            Console.WriteLine(panther.Climb());
-
-            Console.WriteLine(Environment.NewLine);
-
-            // Tiger properties and traits
-            Console.WriteLine(tiger.Color);
-            Console.WriteLine(tiger.Sleep());
-            Console.WriteLine(tiger.Sound());
-            Console.WriteLine(tiger.Action());
-            Console.WriteLine(tiger.Climb());
         }
     }
 }
