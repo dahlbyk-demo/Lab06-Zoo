@@ -7,7 +7,7 @@ namespace Lab06_Zoo.Tests
     {
 
         [Fact]
-        public void Third_level_concrete_to_animal_inheritance()
+        public void Third_level_concrete_to_animal_inheritance_override()
         {
             // Arrange
             Animal tiger = new Tiger();
