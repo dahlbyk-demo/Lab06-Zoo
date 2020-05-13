@@ -76,5 +76,19 @@ namespace Lab06_Zoo.Tests
             // Assert
             Assert.Equal("The cubs are so cute!!!", result);
         }
+
+        [Fact]
+        public void Second_interface_implementation()
+        {
+            // Arrange
+            Peacock peacock = new Peacock();
+
+            // Act
+            string result = peacock.Breed();
+
+            // Assert
+            Assert.Equal("What beautiful feathers!", result);
+        }
+        
     }
 }
