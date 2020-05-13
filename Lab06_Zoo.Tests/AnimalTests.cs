@@ -24,6 +24,19 @@ namespace Lab06_Zoo.Tests
         }
 
         [Fact]
+        public void Interface_subclass_override()
+        {
+            // Arrange
+            Bird owl = new Owl();
+
+            // Act
+            string result = owl.Fly();
+
+            // Assert
+            Assert.Equal("The owl swoops at unsuspecting prey.", result);
+        }
+
+        [Fact]
         public void Testing_interface_on_second_class()
         {
             // Arrange

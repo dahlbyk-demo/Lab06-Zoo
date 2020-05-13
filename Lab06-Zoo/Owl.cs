@@ -36,5 +36,10 @@ namespace Lab06_Zoo
         {
             return "You hear the owl hoot as you walk by and disturb his sleep!";
         }
+
+        public override string Fly()
+        {
+            return "The owl swoops at unsuspecting prey.";
+        }
     }
 }
